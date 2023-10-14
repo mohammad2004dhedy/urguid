@@ -1,0 +1,243 @@
+/* nav{
+    position: sticky;
+    top: 5px;
+    left: 5px;
+} */
+ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nav1{
+   
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 1px;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+}
+.nav1:hover{
+    font-size: 30px;
+    color:rgb(28, 70, 70);
+}
+.navp{
+    margin-top: 0px;
+    padding-top: 1px;
+   white-space:pre-wrap;
+   display: flex;
+    flex-direction: row-reverse;
+}
+/*  */
+li{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration-line:none;
+     margin:0 20px;
+     text-align: right;
+ 
+
+}
+
+a{
+    color: black;
+    cursor:grab;
+    transition: all 500ms;
+}
+a:hover{
+    border-top: solid blue 2px;
+    border-left: solid blue 2px;
+    color:red;
+    cursor: none;
+
+}
+.nave{
+    animation-name: nav;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes nav{
+    0%{
+        background-image: linear-gradient(to right,red,powderblue);
+
+    }
+    50%{
+        background-image: linear-gradient(to left,red,white,powderblue);
+
+    }
+   100%{
+    background-image: radial-gradient(circle,red,powderblue);
+
+   }
+}
+
+body{
+    background-image: linear-gradient(to bottom,rgb(104, 104, 165),white,rgba(136, 199, 212, 0.755),rgba(128, 128, 128, 0.727),transparent);
+    background-repeat: no-repeat;
+}
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.facebook{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(255, 0, 21);
+    rotate: 10deg;
+    position: relative;
+    left: -50px;
+    font-size: xx-large;
+   text-align: center;
+   white-space: pre-wrap;
+   border-radius: 20px;
+   border: 5px solid;
+   animation-name:face ;
+   animation-iteration-count:infinite ;
+   animation-duration: 6s;
+   animation-fill-mode: none;
+   box-shadow:-5px 20px 15px rgb(19, 17, 17) ;
+   transition: all 1s ease;
+   z-index: 2;
+}
+.facebook:hover{
+    width: 300px;
+    height: 450px;
+    background-image: url(photo/facebook.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:10px 20px 15px rgb(19, 17, 17) ;
+    
+}
+.insta{
+    width: 200px;
+    height: 400px;
+    background-color: aqua;
+    font-size: xx-large;
+   text-align: center;
+   white-space: pre-wrap;
+   border-radius: 20px;
+   border: 5px dotted;
+   animation-name:insta ;
+   animation-iteration-count:infinite ;
+   animation-duration: 6s;
+   animation-fill-mode: backwards;
+   box-shadow:0 15px 20px black ;
+   transition: all 1s ease;
+   z-index: 1;
+}
+.insta:hover{
+    z-index: 3;
+    width: 300px;
+    height: 450px;
+    background-image: url(photo/insta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:0 -15px 30px black ;
+   
+}
+.logo{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(105, 81, 171);
+    rotate: -10deg;
+    position: relative;
+    left: 50px;
+    font-size: xx-large;
+   white-space: pre-wrap;
+   text-align: center;
+   border-radius: 20px;
+   border: 5px solid;
+   animation-name:logo ;
+   animation-iteration-count:infinite ;
+   animation-duration: 6s;
+   animation-fill-mode: none;
+   transition: all 1s ease;
+   box-shadow: 5px 20px 20px black;
+   z-index: 2;
+
+}
+.logo:hover{
+    width: 300px;
+    height: 450px;
+    background-image: url(photo/logo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -10px 20px 20px black;
+}
+@keyframes face{
+    0%{
+        border-color: rgb(132, 6, 121);
+
+    }
+    50%{
+        border-color: rgba(43, 11, 157, 0.7);
+    }
+    100%{
+        border-color: rgba(221, 255, 0, 0.778);
+
+    }
+}
+@keyframes insta{
+    0%{
+        border-color: rgb(132, 6, 121);
+
+    }
+    50%{
+        border-color: rgba(43, 11, 157, 0.7);
+    }
+    100%{
+        border-color: rgba(221, 255, 0, 0.778);
+
+    }
+}
+@keyframes logo{
+    0%{
+        border-color: rgb(132, 6, 121);
+
+    }
+    50%{
+        border-color: rgba(43, 11, 157, 0.7);
+    }
+    100%{
+        border-color: rgba(221, 255, 0, 0.778);
+
+    }
+}
+.parent{
+    animation-name:parent ;
+   animation-iteration-count:infinite ;
+   animation-duration: 12s;
+   
+}
+@keyframes parent{
+    0%{
+rotate: 3deg;
+  translate: 0 5px;
+    }
+    25%{
+rotate: -3deg;
+translate: 0 -5px;
+ 
+    }
+    50%{
+      rotate: 3deg;
+      translate: 0 5px;
+    }
+    75%{
+
+        rotate: -3deg;
+        translate: 0 -5px;
+ 
+    }
+    100%{
+        rotate: 3deg;
+        translate: 0 5px;
+    }
+
+}

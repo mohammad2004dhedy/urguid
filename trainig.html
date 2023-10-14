@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" title="table">
+        <caption>table</caption>
+        <thead>
+            <th>name</th>
+            <th>age</th>
+            <th>contry</th>
+            <th>salary</th>
+        </thead>
+        
+              <tbody>
+            <tr>
+                <td>ahmed</td>
+                <td>25</td>
+                <td rowspan="4">palestin</td>
+                <td>500$</td>
+            </tr>
+            <tr>
+                <td>mhmd</td>
+                <td>30</td>
+                <td>600$</td>
+            </tr>
+            <tr>
+                <td>yaser</td>
+                <td>20</td>
+                <td>65$</td>
+            </tr>
+            <tr>
+                <td>hosen</td>
+                <td>40</td>
+                <td>6000$</td>
+            </tr>
+               </tbody>
+
+                     <tfoot>
+                      <tr>
+                        <th colspan="3">total salary</th>
+                        <td>20000$</td>
+                      </tr>
+                         </tfoot>
+    </table>
+   
+    <!--
+         عشان اخزن الاكواد او ارتبهن بستعمل ديف والي هي بتكون عشان ارتب الكود بحط فيها اكواد الهيدر وكمان
+         ديف لاكواك الناف بار وكمان ديف لاكواد المقالة وكمان ديف للفوتر الي هب نهابة المقال وهيك عشان اعرف وين الكود الي بدي اياه
+         بس في اشي احسن منها وارتب وبشتغل نفس شغلها بالزبط بس باسم مختلف مثل :
+         <header> هاي لراس الصفحة
+            <nav> هاي للناف بار الي تحت الهيدر
+                <main> هاي لمحتوى الموقع زي بودي تقريبا  وفيها محتوى الموقع
+                    <section> هاي لقسم معين بالموقع 
+                        <article> هاي للمقالة 
+                            <aside>هاي للبار الجانبي او الي هو المحتوى الي بكون عجنب الصفحة
+                                <footer>هاي لقاع الصفحة 
+    -->
+   <!-- 
+    الروابط نوعين 
+    الي فيها https هاي بتكون لمواقع ثانية 
+    والي فش فيها بتكون لصفحة من صفحات الموقع 
+    وبقدر اعمله رابط انه يروح لجزء معين بالصفحة مثلا اذا كبس على كلمة بلاط يروح لقسم البلاط بالصفحة نفسها المفتوحة
+    وبعمل هيك من خلال اشي اسمه اي دي داخل الفقرة او سكشن البلاط وبسميه الي بدي اياه وداخل الرابط بحط هاشتاق والاي دي الي حطيته
+    -->
+    <audio controls muted autoplay >
+        <source src="C:\ur_guid\audio\الشامي __ يادنيا زيدي حمل --(MP3_160K).mp3" type="audio/mpeg">
+        <source src="C:\ur_guid\audio\الشامي __ يادنيا زيدي حمل --(MP3_160K).ogg" type="audio/ogg">
+        <source src="C:\ur_guid\audio\الشامي __ يادنيا زيدي حمل --(MP3_160K).wav" type="audio/wav">
+        your browser does not support this audio
+     </audio>
+     <br>
+     <video controls muted poster="C:\ur_guid\photo\urguid logo.jpg" width="50%" height="50%" preload="none">
+      <source src="C:\ur_guid\video\371806655_6802533993131765_5439362582396850742_n.mp4" type="video/mp4">
+      <source src="C:\ur_guid\video\371806655_6802533993131765_5439362582396850742_n.webm" type="video/webm">
+      your browser does not support this video
+      <track src="" kind="" label="" ><!-- لملفات الترجمة تاعت الفيديو والي بتحطه ديفلت بشتغل لحاله اول ما تشغل الفيديو-->
+      <!-- س ر س هاي رابط ملف الترجمة و كايند نوع الملف وهو سبتايتل ولابل تسم الترجمة ااي بدها تظهر يعني عربي او انجليزي وهيك-->
+  </video>
+
+
+
+<fieldset>
+    <legend>login page</legend>
+<form style="text-align: center;" action="urguid.html" method="post">
+<div>
+    <label for="user">user name</label>
+    <input id="user" type="txt" placeholder="enter user name" required name="user-name">
+</div>
+<br>
+<div>
+    <label for="pass">password</label>
+    <input id="pass" type="password" required placeholder="enter password" name="password"> 
+</div>
+<br>
+<div>
+    <label for="color">choose color</label>
+    <input id="color" type="color" >
+</div>
+<br>
+<div>
+    <label for="file">file</label>
+    <input id="file" type="file">
+</div>
+<br>
+<div>
+    <label for="number">number</label>
+    <input id="number" type="number">
+</div>
+<br>
+<div>
+    <label for="range">range</label>
+    <input id="range" type="range" min=0 max="100" step="10" value="50">
+</div>
+<br>
+<div>
+    <label for="search">search</label>
+    <input id="search" type="search">
+</div>
+<br>
+<div>
+    <label for="hidden">hidden</label>
+    <input id="hidden" type="hidden">
+</div>
+<br>
+<div>
+    <label for="url">url</label>
+    <input id="url" type="url">
+</div>
+<br>
+<div>
+    
+    <input id="sub" type="submit" value="login">
+</div>
+<br>
+<hr>
+<h3>choose you fav food</h3>
+<div>
+    <label for="mk">mklopa</label>
+    <input id="mk" type="checkbox" name="food" value="mklopa">
+</div>
+<div>
+    <label for="kb">kbsa</label>
+    <input id="mk" type="checkbox" name="food" value="kbsa" checked>
+</div>
+<div>
+    <label for="mj">mjdra</label>
+    <input id="mj" type="checkbox" name="food" value="mjdra">
+</div>
+<div>
+    <label for="ad">adas</label>
+    <input id="ad" type="checkbox" name="food" value="adas">
+</div>
+
+<br>
+<hr>
+<div>
+    <label for="html">html</label>
+    <input id="html" name="fav" type="radio" value="html">
+</div>
+<div>
+    <label for="css">css</label>
+    <input type="radio" id="css" value="css" name="fav">
+</div>
+</form>
+<hr>
+<hr>
+<hr>
+<hr>
+   <form>
+    <label for="tw">choose your town</label>
+     <select  id="tw" name="town">
+        <optgroup label="arabi">
+            <option value="jordan">jordan</option>
+            <option selected value="falestien">palestine</option>
+            <option value="araba">aaraba</option>
+             
+        </optgroup>
+        <optgroup label="ajnabi">
+            <option value="usa">usa</option>
+         <option value="ua">ua</option>
+         <option> omman</option>
+
+        </optgroup>
+       
+     </select>
+   </form>
+
+</fieldset>
+
+
+    <form >
+        <label for="cho">chose your fav lang</label>
+        <select id="cho" name="foodfav" >
+            <optgroub label="arab food">
+                <option value="mklopa">mklopa</option>
+                <option value="mjdra">mjdra</option>
+            </optgroub>
+            
+            <optgroub label="otherfood">
+                <option value="burger">burger</option>
+                <option value="shntsll">shntsell</option>
+            </optgroub>
+            
+
+        </select>
+        <input name="select" list="lang">
+        <datalist id="lang">
+            <option value="c">
+                <option value="c++">
+                    <option value="c#">
+                        <option value="python">
+        </datalist>
+
+    </form>
+<!-- novalidate لما حطها داخل الفورم كل التنسيقات الي عملتها من ريكيورد او ماكس لينث وغيرو ما بيتم تطبيقها -->
+<form method="post">
+    <input type="text" placeholder="text" name="user" maxlenght="12" minlength="8" required>
+    <input
+    type="password"
+     name="password " 
+      placeholder=" enter pass"
+        required
+        maxlength="8"
+        minlength="8" 
+        autofocus
+        disabled
+        readonly
+    ><!-- الوتو فوكس هاي يعني اول ما يفتح الصفحة المتصفح بيركز على هاض الفراغ وبعلم عليه لحاله عشان اعبيه  -->
+    <!-- disabled 
+    هاي لما احطها بقدرش اكتب اشي بالفراغ ممنوع واذا كنت عامل فاليو الفاليو بقدرش اعدل عليها اشي وبشتخدها مثلا اذا كان بديش المستخدم يغير الاي دي وطبعا هاي بتنبعتش مع مع البيانات لما اعمل سبميت
+    -->
+    <!--readonly
+       هاي نفس شغل الديسابيلد بس الفرق هاي بتنبعت مع البيانات لما اعمل سبميت واستخدامها
+    -->
+    <textarea rows="5" cols="15" name="about" placeholder="write here" required maxlength="50" minlength="10">
+        <!--text validate on youtube-->
+
+
+    </textarea>
+    <div>
+        <input type="submit" valeu="send"> 
+
+    </div>
+    <div>
+        <button type="reset">clear</button>
+    </div>
+
+</form>
+
+<iframe allowfullscreen autoplay width="" height="" src="https://youtu.be/4XQDgWmpQsU?list=PLknwEmKsW8OvX7kZhsv6I6tT8SKDXDwUc"></iframe>
+<object data="https://youtu.be/4XQDgWmpQsU?list=PLknwEmKsW8OvX7kZhsv6I6tT8SKDXDwUc"></object>
+<embed src="https://youtu.be/4XQDgWmpQsU?list=PLknwEmKsW8OvX7kZhsv6I6tT8SKDXDwUc">
+    <img src="">
+    <audio controls muted autoplay ></audio>
+    <viedo ></viedo>
+
+<p>
+
+<a download="photo" href="photo\Facebook_f_logo_(2021).svg.webp">click</a>
+
+</p> 
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
